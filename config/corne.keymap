@@ -49,10 +49,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //					  | ENT | SPC |     |   |     | GUI | ALT | 
                         bindings = <
-	&kp TAB   &kp EXCL  &kp AT &kp HASH &kp DLLR  &kp PRCNT          &trans &trans &trans &trans &trans &kp BSPC
-	&kp LCTRL &kp CARET &trans &trans   &trans    &trans             &trans &trans &trans &trans &trans &trans
-	&kp LSHFT &trans    &trans &trans   &trans    &trans             &trans &trans &trans &trans &trans &trans
-                               &kp RET  &kp SPACE &trans             &trans &LGUI  &kp RALT 
+	&kp TAB   &kp EXCL  &kp AT &kp HASH &kp DLLR  &kp PRCNT          &trans &trans   &trans &trans &trans &kp BSPC
+	&kp LCTRL &kp CARET &trans &trans   &trans    &trans             &trans &trans   &trans &trans &trans &trans
+	&kp LSHFT &trans    &trans &trans   &trans    &trans             &trans &trans   &trans &trans &trans &trans
+                               &kp RET  &kp SPACE &trans             &trans &kp LGUI &kp RALT 
                         >;
                 };
         };
