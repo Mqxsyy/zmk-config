@@ -20,10 +20,10 @@
 // |  $  | Z       | X       | C         | V        |  B  |     |  N  | M        | ,         | .       | ?       |  !  |
 //                           | ENTER     | SPACE    | LWR |     | RSE | BSPC     | ESC       |
                         bindings = <
-	&kp TAB   &kp Q   &kp W      &kp E        &kp R       &kp T          &kp Y &kp U       &kp I        &kp O      &kp P        &kp SEMI
-	&kp UNDER &LGUI A &mt LALT S &mt LSHIFT D &mt LCTRL F &kp G          &kp H &mt RCTRL J &mt RSHIFT K &mt RALT L &mt RGUI SQT &kp COLON
-	&kp DLLR  &kp Z   &kp X      &kp C        &kp V       &kp B          &kp N &kp M       &kp COMMA    &kp DOT    &kp QUESTION &kp EXCL
-						         &kp RET      &kp SPACE   &mo 1          &mo 2 &kp BSPC    &kp ESC
+	&kp TAB   &kp Q      &kp W      &kp E        &kp R       &kp T          &kp Y &kp U       &kp I        &kp O      &kp P        &kp SEMI
+	&kp UNDER &mt LGUI A &mt LALT S &mt LSHIFT D &mt LCTRL F &kp G          &kp H &mt RCTRL J &mt RSHIFT K &mt RALT L &mt RGUI SQT &kp COLON
+	&kp DLLR  &kp Z      &kp X      &kp C        &kp V       &kp B          &kp N &kp M       &kp COMMA    &kp DOT    &kp QUESTION &kp EXCL
+						            &kp RET      &kp SPACE   &mo 1          &mo 2 &kp BSPC    &kp ESC
                         >;
                 };
                 lower_layer {
@@ -34,7 +34,7 @@
 // |  ^  | +       | -       | *         | /        |  =  |          |  &  | "|" | ~  |  [  |  ]  |     |
 //                           |           |          |     |          |     |     |    |
                         bindings = <
-	&KP AT    &kp N1      &kp N2      &kp N3        &kp N4       &kp N5             &kp LPAR &kp RPAR &kp LBRC  &kp RBRC  &kp BSLH &kp HASH
+	&kp AT    &kp N1      &kp N2      &kp N3        &kp N4       &kp N5             &kp LPAR &kp RPAR &kp LBRC  &kp RBRC  &kp BSLH &kp HASH
 	&kp PRCNT &mt LGUI N6 &mt LALT N7 &mt LSHIFT N8 &mt LCTRL N9 &kp N0             &kp LEFT &kp DOWN &kp UP    &kp RIGHT &kp DQT  &kp GRAVE
 	&kp CARET &kp PLUS    &kp MINUS   &kp ASTRK     &kp SLASH    &kp EQUAL          &kp AMPS &kp PIPE &kp TILDE &kp LBKT  &kp RBKT &none
                                       &none         &none        &none              &none    &none    &none
