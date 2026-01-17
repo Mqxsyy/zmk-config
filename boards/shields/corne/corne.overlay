@@ -1,6 +1,0 @@
-/ {
-    wired_split {
-        compatible = "zmk,wired-split";
-        device = <&pro_micro_serial>;
-    };
-};
