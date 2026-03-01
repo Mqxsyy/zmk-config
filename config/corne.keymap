@@ -52,10 +52,10 @@
                 default_layer {
                         display-name = "Default Layer";
 // -----------------------------------------------------------------------------------------
-// || Q       | W       | F         | P        |  B  |     | J    | L        | U         | Y       | '       ||
-// || A (GUI) | R (ALT) | S (SHIFT) | T (CTRL) |  G  |     | M    | N (CTRL) | E (SHIFT) | I (ALT) | O (GUI) ||
-// || X       | C       | D         | V        |  Z  |     | K    | H        | ,         | .       | ?       ||
-//                      | ENTER     | SPACE    |     |     | LYR2 | BSPC     | ESC       |
+// || Q       | W       | F         | P        |  B  |          | J    | L        | U         | Y       | '       ||
+// || A (GUI) | R (ALT) | S (SHIFT) | T (CTRL) |  G  |          | M    | N (CTRL) | E (SHIFT) | I (ALT) | O (GUI) ||
+// || X       | C       | D         | V        |  Z  |          | K    | H        | ,         | .       | ?       ||
+//                      | ENTER     | SPACE    |     |          | LYR2 | BSPC     | ESC       |
                         bindings = <
 	&none &kp Q       &kp W       &kp F         &kp P        &kp B          &kp J &kp L        &kp U         &kp Y       &kp SQT      &none
 	&none &hml LGUI A &hml LALT R &hml LSHIFT S &hml LCTRL T &kp G          &kp M &hmr RCTRL N &hmr RSHIFT E &hmr RALT I &hmr RGUI O  &none
@@ -63,13 +63,14 @@
 						          &kp RET       &kp SPACE    &none          &to 1 &kp BSPC     &kp ESC
                         >;
                 };
+
                 lower_layer {
                         display-name = "Lower Layer";
 // -----------------------------------------------------------------------------------------
-// || 1       | 2       | 3         | 4        | 5    |     |  (   | )          | {           | }        | \         ||
-// || 6 (GUI) | 7 (ALT) | 8 (SHIFT) | 9 (CTRL) | 0    |     |      | LFT (CTRL) | DWN (SHIFT) | UP (ALT) | RGT (GUI) ||
-// || +       | -       | *         | /        | =    |     | &    | "|"        | ~           | [        | ]         ||
-//                      |           |          | LYR1 |     | LYR3 |            |             |
+// || 1       | 2       | 3         | 4        | 5    |          |  (   | )          | {           | }        | \         ||
+// || 6 (GUI) | 7 (ALT) | 8 (SHIFT) | 9 (CTRL) | 0    |          |      | LFT (CTRL) | DWN (SHIFT) | UP (ALT) | RGT (GUI) ||
+// || +       | -       | *         | /        | =    |          | &    | "|"        | ~           | [        | ]         ||
+//                      |           |          | LYR1 |          | LYR3 |            |             |
                         bindings = <
 	&none &kp N1       &kp N2       &kp N3         &kp N4        &kp N5             &kp LPAR &kp RPAR        &kp LBRC          &kp RBRC        &kp BSLH        &kp HASH
 	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &none    &hmr RCTRL LEFT &hmr RSHIFT DOWN  &hmr RALT UP    &hmr RGUI RIGHT &kp GRAVE
@@ -81,14 +82,14 @@
                 raise_layer {
                         display-name = "Raise Layer";
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |      |          |     |     |     |     |     | PLAY/PAUSE |
-// |     |     |     |     |     |      |          |     |     |     |     |     |            |
-// |     |     |     |     |     |      |          |     |     |     |     |     |            |
-//			         |     |     | LYR1 |          |     |     |     | 
+// ||     |     |     |     |      |          |     |     |     |     | PLAY/PAUSE ||
+// ||     |     |     |     |      |          |     |     |     |     |            ||
+// ||     |     |     |     |      |          |     |     |     |     |            ||
+//			    |     |     | LYR1 |          |     |     |     | 
                         bindings = <
-	&none &none &none &none &none &none          &none &none &none &none &none &kp C_PLAY_PAUSE
-	&none &none &none &none &none &none          &none &none &none &none &none &none
-	&none &none &none &none &none &none          &none &none &none &none &none &none
+	&none &none &none &none &none &none          &none &none &none &none &kp C_PLAY_PAUSE &none
+	&none &none &none &none &none &none          &none &none &none &none &none            &none
+	&none &none &none &none &none &none          &none &none &none &none &none            &none
                       &none &none &to 0          &none &none &none 
                         >;
                 };
