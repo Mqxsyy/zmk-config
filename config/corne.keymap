@@ -63,7 +63,7 @@
 	&none &kp Q       &kp W       &kp F         &kp P        &kp B            &kp J &kp L        &kp U         &kp Y       &kp SQT     &none
 	&none &hml LGUI A &hml LALT R &hml LSHIFT S &hml LCTRL T &kp G            &kp M &hmr RCTRL N &hmr RSHIFT E &hmr RALT I &hmr RGUI O &none
 	&none &kp X       &kp C       &kp D         &kp V        &kp Z            &kp K &kp H        &kp COMMA     &kp DOT     &kp SLASH   &none
-						          &kp RET       &kp ESC      &kp DEL          &to 1 &kp BSPC     &kp DEL
+						          &kp RET       &kp SPACE    &kp ESC          &to 1 &kp BSPC     &kp DEL
                         >;
                 };
 
