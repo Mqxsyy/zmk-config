@@ -71,14 +71,14 @@
                 lower_layer {
                         display-name = "Lower Layer";
 // -----------------------------------------------------------------------------------------
-// || 1       | 2       | 3         | 4        | 5    |          | :    | (          | {           | }        | )         ||
-// || 6 (GUI) | 7 (ALT) | 8 (SHIFT) | 9 (CTRL) | 0    |          | ;    | LFT (CTRL) | DWN (SHIFT) | UP (ALT) | RGT (GUI) ||
-// || _       | -       | +         | =        | *    |          | `    | "          | [           | ]        | /         ||
+// || 1       | 2       | 3         | 4        | 5    |          | ;    | (          | {           | }        | )         ||
+// || 6 (GUI) | 7 (ALT) | 8 (SHIFT) | 9 (CTRL) | 0    |          | :    | LFT (CTRL) | DWN (SHIFT) | UP (ALT) | RGT (GUI) ||
+// || _       | +       | -         | =        | *    |          | `    | "          | [           | ]        | /         ||
 //                      | HOME      | TAB      | LYR1 |          | LYR3 | BSPC       | END         |
                         bindings = <
-	&none &kp N1       &kp N2       &kp N3         &kp N4        &kp N5             &kp COLON &kp LPAR        &kp LBRC          &kp RBRC        &kp RPAR        &kp HASH
-	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &kp SEMI  &hmr RCTRL LEFT &hmr RSHIFT DOWN  &hmr RALT UP    &hmr RGUI RIGHT &kp GRAVE
-	&none &kp UNDER    &kp MINUS    &kp PLUS       &kp EQUAL     &kp ASTRK          &kp GRAVE &kp DQT         &kp LBKT          &kp RBKT        &kp SLASH    &none
+	&none &kp N1       &kp N2       &kp N3         &kp N4        &kp N5             &kp SEMI  &kp LPAR        &kp LBRC          &kp RBRC        &kp RPAR        &kp HASH
+	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &kp COLON &hmr RCTRL LEFT &hmr RSHIFT DOWN  &hmr RALT UP    &hmr RGUI RIGHT &kp GRAVE
+	&none &kp UNDER    &kp PLUS     &kp MINUS      &kp EQUAL     &kp ASTRK          &kp GRAVE &kp DQT         &kp LBKT          &kp RBKT        &kp SLASH       &none
                                     &kp HOME       &kp TAB       &to 0              &to 2     &kp BSPC        &kp END
                         >;
                 };
