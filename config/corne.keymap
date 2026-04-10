@@ -59,12 +59,12 @@
 // || Q       | W       | F         | P        | B    |          | J    | L        | U         | Y       | '       ||
 // || A (GUI) | R (ALT) | S (SHIFT) | T (CTRL) | G    |          | M    | N (CTRL) | E (SHIFT) | I (ALT) | O (GUI) ||
 // || X       | C       | D         | V        | Z    |          | K    | H        | ,         | .       | DEL     ||
-//                      | ENTER     | SPACE    | LYR3 |          | LYR2 | BSPC     | ESC       |
+//                      | ENTER     | SPACE    | LYR2 |          | LYR3 | BSPC     | ESC       |
                         bindings = <
 	&none &kp Q       &kp W       &kp F         &kp P        &kp B          &kp J &kp L        &kp U         &kp Y       &kp SQT     &none
 	&none &hml LGUI A &hml LALT R &hml LSHIFT S &hml LCTRL T &kp G          &kp M &hmr RCTRL N &hmr RSHIFT E &hmr RALT I &hmr RGUI O &none
 	&none &kp X       &kp C       &kp D         &kp V        &kp Z          &kp K &kp H        &kp COMMA     &kp DOT     &kp DEL     &none
-						          &kp RET       &kp SPACE    &to 2          &to 1 &kp BSPC     &kp ESC
+						          &kp RET       &kp SPACE    &mo 1          &mo 2 &kp BSPC     &kp ESC
                         >;
                 };
 
@@ -74,12 +74,12 @@
 // || 1       | 2       | 3         | 4        | 5    |          | ;    | (          | {           | }        | )         ||
 // || 6 (GUI) | 7 (ALT) | 8 (SHIFT) | 9 (CTRL) | 0    |          | :    | LFT (CTRL) | DWN (SHIFT) | UP (ALT) | RGT (GUI) ||
 // || _       | +       | -         | =        | *    |          | `    | "          | [           | ]        | /         ||
-//                      | HOME      | TAB      | LYR1 |          | LYR3 | BSPC       | END         |
+//                      |           |          |      |          | HOME | TAB        | END         |
                         bindings = <
-	&none &kp N1       &kp N2       &kp N3         &kp N4        &kp N5             &kp SEMI  &kp LPAR        &kp LBRC          &kp RBRC        &kp RPAR        &kp HASH
-	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &kp COLON &hmr RCTRL LEFT &hmr RSHIFT DOWN  &hmr RALT UP    &hmr RGUI RIGHT &kp GRAVE
+	&none &kp N1       &kp N2       &kp N3         &kp N4        &kp N5             &kp SEMI  &kp LPAR        &kp LBRC          &kp RBRC        &kp RPAR        &none
+	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &kp COLON &hmr RCTRL LEFT &hmr RSHIFT DOWN  &hmr RALT UP    &hmr RGUI RIGHT &none
 	&none &kp UNDER    &kp PLUS     &kp MINUS      &kp EQUAL     &kp ASTRK          &kp GRAVE &kp DQT         &kp LBKT          &kp RBKT        &kp SLASH       &none
-                                    &kp HOME       &kp TAB       &to 0              &to 2     &kp BSPC        &kp END
+                                    &none          &none         &none              &kp HOME  &kp TAB         &kp END
                         >;
                 };
 
@@ -89,12 +89,12 @@
 // ||  !  |  @  |  #  |  $  | %    |          | SCRL UP   | LMB    | MMB    | RMB  | PLAY/PAUSE ||
 // ||  ^  |  &  |  <  |  >  | |    |          | SCRL DOWN | M LEFT | M DOWN | M UP | M RIGHT    ||
 // ||  ?  |     |     |     | \    |          |           |        |        |      |            ||
-//			    |     |     | LYR1 |          | LYR2      |        |        | 
+//			    |     |     |      |          |           |        |        | 
                         bindings = <
 	&none &kp EXCL     &kp AT   &kp HASH &kp DLLR &kp PRCNT          &msc SCRL_UP   &mkp LCLK      &mkp MCLK      &mkp RCLK    &kp C_PLAY_PAUSE &none
 	&none &kp CARET    &kp AMPS &kp LT   &kp GT   &kp PIPE           &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &none
 	&none &kp QUESTION &none    &none    &none    &kp BSLH           &none          &none          &none          &none        &none            &none
-                                &none    &none    &to 0              &to 1          &none          &none 
+                                &none    &none    &none              &none          &none          &none 
                         >;
                 };
         };
