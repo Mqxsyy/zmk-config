@@ -77,7 +77,7 @@
 //                      |           |          |      |          | HOME | TAB        | END         |
                         bindings = <
 	&none &kp N1       &kp N2       &kp N3         &kp N4        &kp N5             &kp SEMI  &kp LPAR        &kp LBRC          &kp RBRC        &kp RPAR        &none
-	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &kp COLON &hmr RCTRL LEFT &hmr RSHIFT DOWN  &hmr RALT UP    &hmr RGUI RIGHT &none
+	&none &hml LGUI N6 &hml LALT N7 &hml LSHIFT N8 &hml LCTRL N9 &kp N0             &kp COLON &hmr LCTRL LEFT &hmr LSHIFT DOWN  &hmr LALT UP    &hmr LGUI RIGHT &none
 	&none &kp UNDER    &kp PLUS     &kp MINUS      &kp EQUAL     &kp ASTRK          &kp GRAVE &kp DQT         &kp LBKT          &kp RBKT        &kp SLASH       &none
                                     &none          &none         &none              &kp HOME  &kp TAB         &kp END
                         >;
